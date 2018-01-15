@@ -3,7 +3,12 @@
 	<title>circles</title>
 	<script type="text/javascript" src="paper-full.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="circles.css">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+	<style type="text/css">
+	
+	</style>
 	<script type="text/paperscript" canvas="canvas">
 		// Create a Paper.js Path to draw a line into it:
 		var circles=[];
@@ -192,6 +197,9 @@ function onFrame(event){
 	</script>
 </head>
 <body>
-<canvas id="canvas" resize></canvas>
+<canvas id="canvas" resize style="background:black;z-index:-1;">
+		
+</canvas>
+<p style="margin-top: -350px;margin-left:43%;z-index:1;position:absolute;font-family: 'Sedgwick Ave Display';"><a href="https://pks-97.github.io/TheColorGameProject/"><button style="width:320px;height:50px;margin-left:-70px;font-size:30px" class="btn btn-danger">Click To Play Color Game<h4>...or try pressing some keys</h4></button></a></p>
 </body>
 </html>
